@@ -15,7 +15,7 @@ $services = [
   ],
   '/gielfeldt/' => [
     'file' => '/gille.jpg',
-    'title' => '#hvadsigergieldfeldt',
+    'title' => '#hvadsigergielfeldt',
     'alt' => 'Hvad siger Gielfeldt?',
     'width' => 600,
     'height' => 800,
