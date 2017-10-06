@@ -37,6 +37,19 @@ $services = [
         width: 570px;
         height: 195px;',
   ],
+  '/magnus/' => [
+    'file' => '/magnus.jpg',
+    'title' => '#hvadsigermagnus',
+    'alt' => 'Vad säger Magnus?',
+    'width' => 487,
+    'height' => 700,
+    'boxstyle' => '
+        top: 495px;
+        left: 20px;
+        width: 457px;
+        height: 195px;',
+  ],
+
 ];
 
 $conf = reset($services);
