@@ -49,6 +49,18 @@ $services = [
         width: 457px;
         height: 195px;',
   ],
+  '/preben/' => [
+    'file' => '/preben.jpg',
+    'title' => '#hvadsigerpreben',
+    'alt' => 'Hvad siger Preben?',
+    'width' => 800,
+    'height' => 533,
+    'boxstyle' => '
+        top: 442px;
+        left: 20px;
+        width: 776px;
+        height: 88px;',
+  ],
 
 ];
 
