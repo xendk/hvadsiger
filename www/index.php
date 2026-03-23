@@ -61,7 +61,18 @@ $services = [
         width: 776px;
         height: 88px;',
   ],
-
+  '/gross/' => [
+      'file' => '/gross.jpg',
+      'title' => '#hvadsigergross',
+      'alt' => 'Hvad siger Gross?',
+      'width' => 600,
+      'height' => 800,
+      'boxstyle' => '
+        top: 20px;
+        left: 20px;
+        width: 570px;
+        height: 175px;',
+  ],
 ];
 
 $conf = reset($services);
