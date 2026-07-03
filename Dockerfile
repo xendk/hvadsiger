@@ -1,7 +1,9 @@
-# Maybe not the most specialized image, but it'll do.
-FROM reload/drupal-apache-ssl:latest
+FROM php:8.3-apache
 
-MAINTAINER Thomas Fini Hansen <fini@reload.dk>
+# Enable .htaccess (the site is a mod_rewrite front controller).
+RUN a2enmod rewrite \
+ && printf '<Directory /var/www/html>\n    AllowOverride All\n</Directory>\n' \
+      > /etc/apache2/conf-available/htaccess.conf \
+ && a2enconf htaccess
 
-RUN rm /var/www/html/index.html
-COPY www /var/www/html
+COPY www/ /var/www/html/
